@@ -33,5 +33,15 @@ alias pacman="sudo pacman"
 alias xclip="xclip -selection clipboard"
 alias v="xclip -o" #paste from clipboard
 
-alias wavy="for file in *.mp3; do ffmpeg -i \"$file\" -acodec pcm_s16le -ar 44100 \"${file%.mp3}.wav\"; done"
 alias getmus="yt-dlp -x --audio-format mp3"
+
+alias nasty="mount.cifs //192.168.40.14/raid_share /mnt/samba -o username=dpr,password=lanaarwenlazar"
+
+#how to start xcom2
+#cd /home/dpr/.steam/steam/steamapps/common/XCOM 2/bin
+#and run
+#LD_LIBRARY_PATH="/home/dpr/.steam/steam/steamapps/common/XCOM 2/lib/x86_64" ./XCOM2
+
+#use ffmpeg to record .wav audio:
+#ffmpeg -f pulse -i alsa_input.usb-Solid_State_System_Co._Ltd._LCS_USB_Audio_000000000000-00.mono-fallback /home/dpr/Videos/sound-library/preety.wav
+
